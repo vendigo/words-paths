@@ -1,0 +1,15 @@
+spring:
+  neo4j:
+    uri: bolt://localhost:7687
+    authentication:
+      username: neo4j
+      password: neo4jPass
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: testpassword
+
+logging:
+  level:
+    org.springframework.data.neo4j.cypher: WARN
